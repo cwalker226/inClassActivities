@@ -8,35 +8,63 @@
 }
 
 body {
+  line-height: 30px;
+  font-size: 20px;
 }
 
 header {
   padding: 20px;
   margin-bottom: 20px;
   color: #333;
-  background: #ccc;
+  background: #ffa500;
 }
 
 section {
+  color: white;
+  float: left;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 #left {
+  background-color: #30948d;
+  width: 33.3%;
 }
 
 #middle {
+  background-color: #9e1212;
+  width: 33.3%;
 }
 
 #right {
+  background-color: #30948d;
+  width: 33.3%;
 }
 
 #full {
+  background-color: #394549;
+  width: 100%;
 }
 
 #division {
+  background-color: #6ea3da;
+  padding: 20px;
+  width: 100%;
 }
 
 aside {
+  background-color: #a6b747;
+  float: left;
+  padding: 20px;
+  margin: 20px;
+  width: 33.3%;
+  height: 50%;
 }
 
 footer {
+  background-color: #ffa500;
+  content: "";
+  display: block;
+  clear: both;
+  padding: 20px;
 }

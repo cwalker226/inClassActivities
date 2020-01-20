@@ -24,6 +24,7 @@ aside {
   height: 400px;
   padding: 10px;
   border: 1px solid white;
+  float: left;
 }
 
 main {
@@ -32,6 +33,7 @@ main {
   height: 400px;
   padding: 10px;
   border: 1px solid white;
+  float: right;
 }
 
 footer {
@@ -40,4 +42,5 @@ footer {
   height: 100px;
   padding: 10px;
   border: 1px solid white;
+  clear: both;
 }
