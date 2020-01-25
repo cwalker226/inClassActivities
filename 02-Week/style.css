@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.item {
+    padding: 30px;
+    border: 3px solid black;
+}
+
+#item1 {
+    flex-grow: 2;
+    order: 1;
+}
+
+#item2 {
+
+}
+
+#item3 {
+
+}
+
+#item4 {
+    order: 2;
+}

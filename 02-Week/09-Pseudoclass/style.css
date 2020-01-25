@@ -1,0 +1,13 @@
+.pseudoLink:active, .pseudoLink:focus {
+    background-color: blueviolet;
+    font-size: 10px;
+}
+
+.pseudoLink:hover {
+    background-color: hotpink;
+    font-size: 25px;
+}
+
+.pseudoLink:visited {
+    color: seagreen;
+}
