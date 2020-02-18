@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // 5 rounds against the computer
+    
+    // Computer Score
+    var computerScore = 0
+    // Player Score
+    var playerScore = 0
+    // Define possible moves
+    var moves = ["r", "p", "s"]
+
+
+    for (var turnCounter=1; turnCounter <= 5; turnCounter++) {
+        // Get player move
+        playerMove = prompt("Enter one of: r, p, s");
+
+        // Get computer move
+        computerMove = moves[Math.floor(Math.random() * moves.length)];
+
+        if (computerMove === "r") {
+            if (playerMove === "s" ) {
+                computerScore++;
+            } else if (playerMove === "p") {
+                playerScore++;
+            }
+        } else if (computerMove === "p") {
+            if (playerMove === "r") {
+                playerScore++;
+            } else if (playerMove === "s") {
+                computerScore++;
+            }
+        } else if (computerMove === "s") {
+            if (playerMove === "r") {
+                playerScore++;
+            } else if (playerMove === "p") {
+                computerScore++;
+            }
+        }
+
+        alert("Player picked " + playerMove + " and computer picked " + computerMove + "\n" + "Player Score is " + playerScore + " and computer score is " + computerScore);
+    }
+    if (playerScore > computerScore) {
+        alert("You win!");
+    } else {
+        alert("LOSER");
+    }
+    alert("Final score: player " + playerScore + ", computer " + computerScore);
+
+
+    </script>
+</body>
+</html>
