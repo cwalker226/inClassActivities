@@ -15,6 +15,9 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   // Add a belongsTo association to Authors here
+  Post.associate = function(models){
+    Post.belongsTo(models.Author);
+  }
   // Example: https://github.com/sequelize/express-example/blob/master/models/task.js
   return Post;
 };
